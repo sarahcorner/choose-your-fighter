@@ -1,0 +1,43 @@
+.tooltip_templates {
+	display: none;
+}
+
+
+
+.tooltipster-follower.tooltipster-borderless .tooltipster-box {
+	border: none;
+	background: #fff;
+	background: rgba(10,10,10,.9);
+	margin-top: 300px;
+}
+
+
+.tooltipster-follower.tooltipster-light .tooltipster-content {
+	color: #666;
+	margin-top: 300px;
+}
+
+.tooltipster-follower.tooltipster-noir .tooltipster-box {
+	border-radius: 0;
+	border: 3px solid #000;
+	background: #fff;
+	margin-top: 300px;
+}
+
+.tooltipster-follower.tooltipster-noir .tooltipster-content {
+	color: #000;
+	margin-top: 300px;
+}
+
+.tooltipster-follower.tooltipster-shadow .tooltipster-box {
+	border: none;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 0 10px 6px rgba(0,0,0,.1)
+	margin-top: 300px;
+}
+
+.tooltipster-follower.tooltipster-shadow .tooltipster-content {
+	color: #8d8d8d
+	margin-top: 300px;
+}

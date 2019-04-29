@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="css/reset.css" /> <!-- default reset css file: do not touch -->
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    	<script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+
+    	 <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+		<title>Trope Quiz</title>
+	
+	</head>
+
+	<body>
+
+
+<!--QUESTION ONE - protagonist-->
+
+		<!-- This is needed to tell isotope.js that we are using a multi-filter -->
+		<div data-js="combination-filters">
+
+			<!-- The first button group: you need the class "button-group" for the code to work -->
+			<div class="button-group home" data-filter-group="color">
+
+
+    				<img class="hover" id="popular-strong" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-strong" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-dork" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-cool" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-tragic" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-epic" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-vampire" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-werewolf" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-sorcerer" alt = "" src = "sprites/underdog-idle.png">
+
+    			<br>
+
+
+
+
+    				<img class="hover" id="underdog-strong" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-dork" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-cool" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-tragic" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-anti" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-vampire" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-werewolf" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-royal" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-assassin" alt = "" src = "sprites/nonconformist-idle.png">
+
+    			<br>
+
+
+    				<img class="hover" id="nonconformist-dork" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-cool" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-epic" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-anti" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-vampire" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-sorcerer" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-royal" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-assassin" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-pirate" alt = "" src = "sprites/popular-idle.png">
+
+    			<br>
+
+
+
+
+    				<img class="hover" id="popular-tragic" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-epic" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-anti" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-werewolf" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-sorcerer" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-royal" alt = "" src = "sprites/underdog-idle.png">
+    				<img class="hover" id="popular-assassin" alt = "" src = "sprites/popular-idle.png">
+    				<img class="hover" id="nonconformist-pirate" alt = "" src = "sprites/nonconformist-idle.png">
+    				<img class="hover" id="underdog-pirate" alt = "" src = "sprites/underdog-idle.png">
+			
+
+
+			</div>
+
+    		<div class="menu">
+    		<div class="title">
+    		<b>Choose Your Fighter:</b><br> Stock Character Edition
+    		</div>
+
+			<div class="nav"><button class="start">START</button><div class="line"></div><button class="reset">HOME</button></div>
+
+			</div>
+
+
+
+		
+			<!-- The first button group: you need the class "button-group" for the code to work -->
+			<div class="button-group one" data-filter-group="color">
+				<div class="instruction"><div class="number">1.</div> Pick your protagonist.</div><div class="space"></div>
+				
+				<button class="button nonconformist" data-filter=".nonconformist">
+					<img class="non" src="sprites/nonconformist-idle.gif"><br>
+					<p>NONCONFORMIST</p>
+				</button>
+				<div class="follow non-idle">
+					<div class="header"><strong>The Nonconformists</strong></div>
+					<div class="body"> 
+					BEATRICE PRIOR <br>from <i>Divergent</i> series by Veronica Roth<br><br>
+					RAMONA FLOWERS <br>from <i>Scott Pilgrim Vs The World</i><br><br>
+					SHAY <br>from <i>Uglies</i> by Scott Westerfeld<br><br><div class="horizontal"></div>
+					<strong>Also classified as:</strong><br>
+					The Loner<br>
+					The Rebels<br>
+					</div>
+				</div>
+				
+				<button class="button underdog" data-filter=".underdog">
+					<img class="und" src="sprites/underdog-idle.gif"><br>
+					<p>UNDERDOG</p>
+				</button>
+				<div class="follow und-idle">
+					<div class="header"><strong>The Underdogs</strong></div>
+					<div class="body"> 
+					HARRY POTTER <br>from <i>The Harry Potter</i> series by J.K. Rowling<br><br>
+					PERCY JACKSON <br>from <i>The Percy Jackson</i> series by Rick Riordan<br><br>
+					MATILDA <br>from <i>Matilda</i> by Roald Dahl<br><br><div class="horizontal"></div>
+					<strong>Also classified as:</strong><br>
+					Average Joe<br>
+					Unlikely Hero
+					</div>
+
+				</div>
+
+				<button class="button popular" data-filter=".popular">
+					<img class="pop" src="sprites/popular-idle.gif"><br>
+					<p>POPULAR</p>
+				</button>
+				<div class="follow pop-idle">
+					<div class="header"><strong>The Popular Kids</strong></div>
+					<div class="body"> 
+					VERONICA SAWYER <br>from <i>The Heathers</i><br><br>
+					CADY HERON <br>from <i>Mean Girls</i><br><br>
+					NANCY DREW <br>from <i>The Nancy Drew</i> series by Carolyn Keene<br><br>
+					AANG <br>from <i>Avatar: The Last Airbender</i><br><br><div class="horizontal"></div>
+					<strong>Also classified as:</strong><br>
+					The Cheerleaders<br>
+					Jocks
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+<!--QUESTION TWO - personality-->
+
+			<!-- NONCONFORMIST
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group two-nonconformist">
+				<div class="instruction"><div class="number">2.</div> Give them a personality.</div><div class="space"></div>
+				<button>
+					<img class="nonconformist-strong" src="sprites/nonconformist-strong.gif"><br>
+					<p>THE TOUGH KID</p>
+				</button>
+				<div class="follow non-strong">
+					<div class="header"><strong>KATNISS EVERDEEN</strong></div>
+					<div class="body"> 
+					from <i>The Hunger Games</i> trilogy by Suzanne Collins
+					</div>
+				</div>
+				<button>
+					<img class="nonconformist-dork" src="sprites/nonconformist-flirt.gif"><br>
+					<p>THE DORK</p>
+				</button>
+				<div class="follow non-dork">
+					<div class="header"><strong>MAEVE</strong></div>
+					<div class="body"> 
+					from <i>Sex Education</i><br><br>
+					<strong>Also classified as:</strong><br>
+					The Flirt
+					</div>
+				</div>				
+				<button>
+					<img class="nonconformist-cool" src="sprites/nonconformist-cool.gif"><br>
+					<p>THE COOL KID</p>
+				</button>
+				<div class="follow non-cool">
+					<div class="header"><strong>EDWARD CULLEN</strong></div>
+					<div class="body"> 
+					from <i>The Twilight Saga</i> by Stephanie Meyer
+					</div>
+				</div>	
+			</div>
+
+			<!-- POPULAR
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group two-popular">
+				<div class="instruction"><div class="number">2.</div> Give them a personality.</div><div class="space"></div>
+				<button>
+					<img class="popular-strong" src="sprites/popular-strong.gif"><br>
+					<p>THE TOUGH KID</p>
+				</button>
+				<div class="follow pop-strong">
+					<div class="header"><strong>NANCY DREW</strong></div>
+					<div class="body"> 
+					from <i>The Nancy Drew</i> series by Carolyn Keene
+					</div>
+				</div>					
+				<button>
+					<img class="popular-dork" src="sprites/popular-flirt.gif"><br>
+					<p>THE DORK</p>
+				</button>
+				<div class="follow pop-dork">
+					<div class="header"><strong>PETER PAN</strong></div>
+					<div class="body"> 
+					from <i>Peter Pan</i> by J.M. Barrie
+					</div>
+				</div>	
+				<button>
+					<img class="popular-cool" src="sprites/popular-cool.gif"><br>
+					<p>THE COOL KID</p>
+				</button>
+				<div class="follow pop-cool">
+					<div class="header"><strong>MR. DARCY</strong></div>
+					<div class="body"> 
+					from <i>Pride and Prejudice</i> by Jane Austen
+					</div>
+				</div>	
+			</div>
+
+			<!-- UNDERDOG
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group two-underdog">
+				<div class="instruction"><div class="number">2.</div> Give them a personality.</div><div class="space"></div>
+				<button>
+					<img class="underdog-strong" src="sprites/underdog-strong.gif"><br>
+					<p>THE TOUGH KID</p>
+				</button>
+				<div class="follow und-strong">
+					<div class="header"><strong>JACOB BLACK</strong></div>
+					<div class="body"> 
+					from <i>Twilight</i> by Stephanie Meyer
+					</div>
+				</div>	
+				<button>
+					<img class="underdog-dork" src="sprites/underdog-flirt.gif"><br>
+					<p>THE DORK</p>
+				</button>
+				<div class="follow und-dork">
+					<div class="header"><strong>LUCY PEVENSIE</strong></div>
+					<div class="body"> 
+					from <i>The Chronicles of Narnia</i> by C.S. Lewis<br><br>
+					SCOTT PILGRIM from <i>Scott Pilgrim Vs The World</i>
+					</div>
+				</div>	
+				<button>
+					<img class="underdog-cool" src="sprites/underdog-cool.gif"><br>
+					<p>THE COOL KID</p>
+				</button>
+				<div class="follow und-cool">
+					<div class="header"><strong>NANCY DREW</strong></div>
+					<div class="body"> 
+					from <i>Nancy Drew</i> series by Carolyn Keene
+					</div>
+				</div>	
+			</div>
+
+
+
+<!--QUESTION THREE - hero -->
+
+			<!-- NONCONFORMIST
+			The third button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group three-nonconformist">
+				<div class="instruction"><div class="number">3.</div> Make them a hero.</div><div class="space"></div>
+				<button>
+					<img class="nonconformist-tragic" src="sprites/nonconformist-tragic.gif"><br>
+					<p>TRAGIC HERO</p>
+				</button>
+				<div class="follow non-tragic">
+					<div class="header"><strong>HAMLET</strong></div>
+					<div class="body"> 
+					from <i>Hamlet</i> by Shakespeare
+					</div>
+				</div>	
+				<button>
+					<img class="nonconformist-epic" src="sprites/nonconformist-epic.gif"><br>
+					<p>EPIC HERO</p>
+				</button>
+				<div class="follow non-epic">
+					<div class="header"><strong>ODYSSEUS</strong></div>
+					<div class="body"> 
+					from <i>The Odyssey</i> by Homer
+					</div>
+				</div>	
+				<button>
+					<img class="nonconformist-anti" src="sprites/nonconformist-anti.gif"><br>
+					<p>ANTIHERO</p>
+				</button>
+				<div class="follow non-anti">
+					<div class="header"><strong>CAPTAIN JACK SPARROW</strong></div>
+					<div class="body"> 
+					from <i>The Pirates of the Caribbean</i> franchise
+					</div>
+				</div>	
+			</div>
+
+			<!-- POPULAR
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group three-popular">
+				<div class="instruction"><div class="number">3.</div> Make them a hero.</div><div class="space"></div>
+				<button>
+					<img class="popular-tragic" src="sprites/popular-tragic.gif"><br>
+					<p>TRAGIC HERO</p>
+				</button>
+				<div class="follow pop-tragic">
+					<div class="header"><strong>ACHILLES</strong></div>
+					<div class="body"> 
+					from <i>The Iliad</i> by Homer
+					</div>
+				</div>	
+				<button>
+					<img class="popular-epic" src="sprites/popular-epic.gif"><br>
+					<p>EPIC HERO</p>
+				</button>
+				<div class="follow pop-epic">
+					<div class="header"><strong>ODYSSEUS</strong></div>
+					<div class="body"> 
+					from <i>The Odyssey</i> by Homer
+					</div>
+				</div>	
+				<button>
+					<img class="popular-anti" src="sprites/popular-anti.gif"><br>
+					<p>ANTIHERO</p>
+				</button>
+				<div class="follow pop-anti">
+					<div class="header"><strong>TAYLOR DURDEN</strong></div>
+					<div class="body"> 
+					from <i>Fight Club</i>
+					</div>
+				</div>	
+			</div>
+
+			
+
+			<!-- UNDERDOG
+			The second button group: these do not effect the results, so we don't put class="button" and data-filter in the buttons -->
+			<div class="button-group three-underdog">
+				<div class="instruction"><div class="number">3.</div> Make them a hero.</div><div class="space"></div>
+				<button>
+					<img class="underdog-tragic" src="sprites/underdog-tragic.gif"><br>
+					<p>TRAGIC HERO</p>
+				</button>
+				<div class="follow und-tragic">
+					<div class="header"><strong>OEDIPUS</strong></div>
+					<div class="body"> 
+					from <i>Oedipus</i> series by Sophacles
+					</div>
+				</div>	
+				<button>
+					<img class="underdog-epic" src="sprites/underdog-epic.gif"><br>
+					<p>EPIC HERO</p>
+				</button>
+				<div class="follow und-epic">
+					<div class="header"><strong>ODYSSEUS</strong></div>
+					<div class="body"> 
+					from <i>The Odyssey</i> by Homer
+					</div>
+				</div>	
+				<button>
+					<img class="underdog-anti" src="sprites/underdog-anti.gif"><br>
+					<p>ANTIHERO</p>
+				</button>
+				<div class="follow und-anti">
+					<div class="header"><strong>WALTER WHITE</strong></div>
+					<div class="body"> 
+					from <i>Breaking Bad</i>
+					</div>
+				</div>	
+			</div>
+
+
+
+
+<!--QUESTION FOUR - paranormal -->
+
+			<!-- NONCONFORMIST
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group four-nonconformist">
+				<div class="instruction"><div class="number">4.</div> Pick a paranormal attribute.</div><div class="space"></div>
+				<button>
+					<img class="nonconformist-werewolf" src="sprites/nonconformist-werewolf.gif"><br>
+					<p>WEREWOLF</p>
+				</button>
+				<div class="follow non-werewolf">
+					<div class="header"><strong>MERCY THOMPSON</strong></div>
+					<div class="body"> 
+					from <i>Moon Called</i> series by Patricia Briggs
+					</div>
+				</div>	
+				<button>
+					<img class="nonconformist-vampire" src="sprites/nonconformist-vampire.gif"><br>
+					<p>VAMPIRE</p>
+				</button>
+				<div class="follow non-vampire">
+					<div class="header"><strong>THE CULLEN FAMILY</strong></div>
+					<div class="body"> 
+					from <i>The Twilight Saga</i> by Stephanie Meyer
+					</div>
+				</div>
+				<button>
+					<img class="nonconformist-sorcerer" src="sprites/nonconformist-sorcerer.gif"><br>
+					<p>SORCERER</p>
+				</button>
+				<div class="follow non-sorcerer">
+					<div class="header"><strong>THE DRAGON</strong></div>
+					<div class="body"> 
+					from <i>Uprooted</i> by Naomi Novik
+					</div>
+				</div>
+			</div>
+
+			<!-- POPULAR
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group four-popular" >
+				<div class="instruction"><div class="number">4.</div> Pick a paranormal attribute.</div><div class="space"></div>
+				<button>
+					<img class="popular-werewolf" src="sprites/popular-werewolf.gif"><br>
+					<p>WEREWOLF</p>
+				</button>
+				<div class="follow pop-werewolf">
+					<div class="header"><strong>JACOB BLACK</strong></div>
+					<div class="body"> 
+					from <i>The Twilight Saga</i> by Stephanie Meyer
+					</div>
+				</div>
+				<button>
+					<img class="popular-vampire" src="sprites/popular-vampire.gif"><br>
+					<p>VAMPIRE</p>
+				</button>
+				<div class="follow pop-vampire">
+					<div class="header"><strong>LISSA DRAGOMIR</strong></div>
+					<div class="body"> 
+					from <i>The Vampire Academy</i> series by Richelle Mead
+					</div>
+				</div>
+				<button>
+					<img class="popular-sorcerer" src="sprites/popular-sorcerer.gif"><br>
+					<p>SORCERER</p>
+				</button>
+				<div class="follow pop-sorcerer">
+					<div class="header"><strong>BONNIE BENNETT</strong></div>
+					<div class="body"> 
+					from <i>The Vampire Diaries</i> series by L.J. Smith
+					</div>
+				</div>
+			</div>
+
+			<!-- UNDERDOG
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group four-underdog" >
+				<div class="instruction"><div class="number">4.</div> Pick a paranormal attribute.</div><div class="space"></div>
+				<button>
+					<img class="underdog-werewolf" src="sprites/underdog-werewolf.gif"><br>
+					<p>WEREWOLF</p>
+				</button>
+				<div class="follow und-werewolf">
+					<div class="header"><strong>SAM</strong></div>
+					<div class="body"> 
+					from the <i>Shiver</i> trilogy by Maggie Stiefvater
+					</div>
+				</div>
+				<button>
+					<img class="underdog-vampire" src="sprites/underdog-vampire.gif"><br>
+					<p>VAMPIRE</p>
+				</button>
+				<div class="follow und-vampire">
+					<div class="header"><strong>LOUIS DE POINTE DU LAC</strong></div>
+					<div class="body"> 
+					from <i>Interview With The Vampire</i> by Anne Rice
+					</div>
+				</div>
+				<button>
+					<img class="underdog-sorcerer" src="sprites/underdog-sorcerer.gif"><br>
+					<p>SORCERER</p>
+				</button>
+				<div class="follow und-sorcerer">
+					<div class="header"><strong>HARRY POTTER</strong></div>
+					<div class="body"> 
+					from the <i>Harry Potter</i> series by J.K. Rowling
+					</div>
+				</div>
+			</div>
+
+
+
+
+<!--QUESTION FIVE - occupation -->
+
+
+			<!-- UNDERDOG
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group five-underdog" >
+				<div class="instruction"><div class="number">5.</div> Give them a job.</div><div class="space"></div>
+				<button>
+					<img class="underdog-pirate" src="sprites/underdog-pirate.gif"><br>
+					<p>PIRATE</p>
+				</button>
+				<div class="follow und-pirate">
+					<div class="header"><strong>JIM HAWKINS</strong></div>
+					<div class="body"> 
+					from <i>Treasure Island</i> by Robert Louis Stevenson
+					</div>
+				</div>
+				<button>
+					<img class="underdog-royal" src="sprites/underdog-royal.gif"><br>
+					<p>ROYAL</p>
+				</button>
+				<div class="follow und-royal">
+					<div class="header"><strong>AMELIA (MIA) THERMOPOLIS</strong></div>
+					<div class="body"> 
+					from <i>The Princess Diaries</i> series by Meg Cabot
+					</div>
+				</div>
+				<button>
+					<img class="underdog-assassin" src="sprites/underdog-assassin.gif"><br>
+					<p>ASSASSIN</p>
+				</button>
+				<div class="follow und-assassin">
+					<div class="header"><strong>AZOTH</strong></div>
+					<div class="body"> 
+					from <i>The Night Angels Trilogy</i> by Brent Weeks
+					</div>
+				</div>
+			</div>
+
+
+			<!-- POPULAR
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group five-popular">
+				<div class="instruction"><div class="number">5.</div> Give them a job.</div><div class="space"></div>
+				<button>
+					<img class="popular-pirate" src="sprites/popular-pirate.gif"><br>
+					<p>PIRATE</p>
+				</button>
+				<div class="follow pop-pirate">
+					<div class="header"><strong>HOOK</strong></div>
+					<div class="body"> 
+					from <i>Once Upon A Time</i>
+					</div>
+				</div>
+				<button>
+					<img class="popular-royal" src="sprites/popular-royal.gif"><br>
+					<p>ROYAL</p>
+				</button>
+				<div class="follow pop-royal">
+					<div class="header"><strong>PRINCE RICHARD</strong></div>
+					<div class="body"> 
+					from <i>A Christmas Prince</i>
+					</div>
+				</div>
+				<button>
+					<img class="popular-assassin" src="sprites/popular-assassin.gif"><br>
+					<p>ASSASSIN</p>
+				</button>
+				<div class="follow pop-assassin">
+					<div class="header"><strong>JACOB FRYE</strong></div>
+					<div class="body"> 
+					from <i>Assassin's Creed Sydnicate</i>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- NONCONFORMIST
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group five-nonconformist">
+				<div class="instruction"><div class="number">5.</div> Give them a job.</div><div class="space"></div>
+				<button>
+					<img class="nonconformist-pirate" src="sprites/nonconformist-pirate.gif"><br>
+					<p>PIRATE</p>
+				</button>
+				<div class="follow non-pirate">
+					<div class="header"><strong>CAPTAIN AMELIA</strong></div>
+					<div class="body"> 
+					from Disney's <i>Treasure Island</i>
+					</div>
+				</div>
+				<button>
+					<img class="nonconformist-royal" src="sprites/nonconformist-royal.gif"><br>
+					<p>ROYAL</p>
+				</button>
+				<div class="follow non-royal">
+					<div class="header"><strong>PRINCESS FIONA</strong></div>
+					<div class="body"> 
+					from <i>Shrek</i>
+					</div>
+				</div>
+				<button>
+					<img class="nonconformist-assassin" src="sprites/nonconformist-assassin.gif"><br>
+					<p>ASSASSIN</p>
+				</button>
+				<div class="follow non-assassin">
+					<div class="header"><strong>CELAENA SARDOTHIEN</strong></div>
+					<div class="body"> 
+					from the <i>Throne of Glass</i> series by Sarah J. Maas
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+<!--QUESTION SIX - genre -->
+
+
+			<!-- UNDERDOG
+			The fourth button group: pretty much the same as the first group -->
+			<div class="button-group six" data-filter-group="shape">
+				<div class="instruction"><div class="number">6.</div> Put them in a genre.</div><div class="space"></div>
+
+
+				<button class="button fantasy" data-filter=".fantasy">
+					<img class="fantasy-final" id="fantasy" src="sprites/fantasy.gif"><br>
+					<p>FANTASY</p>
+				</button>
+				<div class="follow fan-final">
+					<div class="header"><strong>FANTASY, you say?</strong></div>
+					<div class="body"> 
+					<strong><underline>Fantasy fiction</underline></strong> involves any story that could not happen in real life. Many times, this involves epic world building, magical systems, or bizarre species.<br><br><strong><underline>High Fantasy</underline></strong> takes place in a world other than our own. Think <i>Lord of the Rings</i> or <i>Throne of Glass</i>.
+					</div>
+				</div>
+
+
+				<button class="button contemporary" data-filter=".contemporary">
+					<img class="contemp-final" id="contemporary" src="sprites/contemporary.gif"><br>
+					<p>CONTEMPORARY</p>
+				</button>
+				<div class="follow con-final">
+					<div class="header"><strong>CONTEMPORARY? <br>The heck?</strong></div>
+					<div class="body"> 
+					<strong><underline>Contemporary fiction</underline></strong> takes place in our world, and portrays a realistic story. Contemporary authors populate our world with imaginary characters and situations that reflect our society.
+					</div>
+				</div>
+
+
+				<button class="button " data-filter=".scifi">
+					<img class="scifi-final" id="scifi" src="sprites/sci-fi.gif"><br>
+					<p>SCIENCE FICTION</p>
+				</button>
+				<div class="follow scfi-final">
+					<div class="header"><strong>What the heck <br>is Science Fiction anyway?</strong></div>
+					<div class="body"> 
+					Science Fiction is often confused with fantasy. However, sci-fi is not wholly imaginary and must incorporate existing or fictionalized scientific principles. 
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+
+
+			<!--The reset button: clicking on this will refresh the page, see script.js (lines 22-24) to see how the code works-->
+
+
+			<!--All Possible Results to be filtered based on the questions above-->
+			<!--The class, grid, is needed to make the divs inside be filtered-->
+			<!--The class, grid, is the styling for the entire area-->
+			<!--the classes, black/white/red and cat/dog/hamster are data filters from the button groups above-->
+			<!--the class, result, is the stylings of all the divs-->
+			<!--the class, color-shape, is a combination filter from the data-filter-group from the button groups above. This is needed for the isotope library to remember what the user selected in the first button group.-->
+			<div class="grid final"> 
+				<div class="color-shape result nonconformist contemporary" style="border: black solid 3px; width: 350px; height: 450px; margin-top: 35px; margin-right: 100px;">
+					<img class="overlap top mini-non" style="margin-left: 18px; padding-left: 15px;" src="sprites/mini-nonconformist.gif">
+					<img class="overlap" style="margin-top: -8px; margin-left: 12px; padding-left: 15px;" src="sprites/contemporary.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A CONTEMPORARY NONCONFORMIST</div>
+				</div>
+
+				<div class="color-shape result nonconformist scifi" style="border: black solid 3px; width: 350px; height: 475px; margin-top: 35px; margin-right: 100px;">
+					<img class="overlap top mini-non" style="padding-bottom: 50px; padding-left: 25px; margin-left: 8px;" src="sprites/mini-nonconformist.gif">
+					<img class="overlap" style="margin-top: 25px; margin-left: 12px; padding-left: 20px;" src="sprites/sci-fi.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A SCI-FI NONCONFORMIST</div>
+				</div>
+
+				<div class="color-shape result nonconformist fantasy" style="border: black solid 3px; width: 350px; height: 500px; margin-top: 20px; margin-right: 100px;">
+					<img class="overlap top mini-non" style="margin-top: 50px; margin-left: 25px;" src="sprites/mini-nonconformist.gif">
+					<img class="overlap" style="margin-top: 50px; margin-left: 25px;" src="sprites/fantasy.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A FANTASY NONCONFORMIST</div>
+				</div>
+
+
+				<div class="follow-mini non-mini">
+					<div style="padding: 10px;">Look at that rebel go!</div><div style="background: black; padding: 10px; color: white;">Snatch yourself a Nonconformist trading card!</div>
+				</div>
+
+
+				<div class="color-shape result popular contemporary" style="border: black solid 3px; width: 350px; height: 450px; margin-top: 35px; margin-right: 100px;">
+					<img class="overlap top mini-pop" style="margin-left: 18px; padding-left: 15px;" src="sprites/mini-popular.gif">
+					<img class="overlap" style="margin-top: -8px; margin-left: 12px; padding-left: 15px;" src="sprites/contemporary.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A CONTEMPORARY POPULAR</div>
+				</div>
+
+				<div class="color-shape result popular scifi" style="border: black solid 3px; width: 350px; height: 475px; margin-top: 35px; margin-right: 100px;">
+					<img class="overlap top mini-pop" style="padding-bottom: 50px; padding-left: 25px; margin-left: 8px;" src="sprites/mini-popular.gif">
+					<img class="overlap" style="margin-top: 25px; margin-left: 12px; padding-left: 20px;" src="sprites/sci-fi.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A SCI-FI POPULAR</div>
+				</div>
+
+				<div class="color-shape result popular fantasy" style="border: black solid 3px; width: 350px; height: 500px; margin-top: 20px; margin-right: 100px;">
+					<img class="overlap top mini-pop" style="margin-top: 50px; margin-left: 25px;" src="sprites/mini-popular.gif">
+					<img class="overlap" style="margin-top: 50px; margin-left: 25px;" src="sprites/fantasy.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A FANTASY POPULAR</div>
+				</div>
+
+
+				<div class="follow-mini pop-mini">
+					<div style="padding: 10px;">Check out that schnazzy kid!</div><div style="background: black; padding: 10px; color: white;">Snatch yourself a Popular trading card!</div>
+				</div>
+
+
+
+
+				<div class="color-shape result underdog contemporary" style="border: black solid 3px; width: 350px; height: 450px; margin-top: 35px; margin-right: 100px;">
+					<img class="overlap top mini-und" style="margin-left: 18px; padding-left: 15px;" src="sprites/mini-underdog.gif">
+					<img class="overlap" style="margin-top: -8px; margin-left: 12px; padding-left: 15px;" src="sprites/contemporary.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A CONTEMPORARY UNDERDOG</div>
+				</div>
+
+				<div class="color-shape result underdog scifi" style="border: black solid 3px; width: 350px; height: 475px; margin-top: 35px; margin-right: 100px;">
+					<img class="overlap top mini-und" style="padding-bottom: 50px; padding-left: 25px; margin-left: 8px;" src="sprites/mini-underdog.gif">
+					<img class="overlap" style="margin-top: 25px; margin-left: 12px; padding-left: 20px;" src="sprites/sci-fi.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A SCI-FI UNDERDOG</div>
+				</div>
+
+				<div class="color-shape result underdog fantasy" style="border: black solid 3px; width: 350px; height: 500px; margin-top: 20px; margin-right: 100px;">
+					<img class="overlap top mini-und" style="margin-top: 50px; margin-left: 25px;" src="sprites/mini-underdog.gif">
+					<img class="overlap" style="margin-top: 50px; margin-left: 25px;" src="sprites/fantasy.gif">
+					<div style="display: inline-block; padding: 10px; padding-top: 10px; padding-bottom: 10px;">Your stock character is:<br></div>
+					<div style="display: inline-block; background: black; color: white; padding: 15px; padding-top: 23px; width: 320px; font-size: 20px; height: 30px">A FANTASY UNDERDOG</div>
+				</div>
+
+
+				<div class="follow-mini und-mini">
+					<div style="padding: 10px;">Nice! You got yourself an underdog!</div><div style="background: black; padding: 10px; color: white;">Snatch yourself an Underdog trading card!</div>
+				</div>
+
+			</div>
+
+
+
+		</div> <!-- end of data-js div that is suppose to wrap around everything that's related to the survey's functions -->
+
+
+	<!-- This is how we link the javascript files, instead of at the top. Yeah, this is weird. -->
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script> <!-- Default jquery library: do not touch -->
+	<script src="js/isotope-docs.min.js?6"></script> <!-- The isotope.js library: do not touch -->
+	<script src="js/script.js"></script> <!-- Our custom jQuery file -->
+
+
+	</body>
+
+</html>
