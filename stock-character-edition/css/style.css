@@ -24,7 +24,7 @@ html {
  	text-decoration: none;
  	position: absolute;
  	text-align: center;
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	font-size: 1.5em;
 	color: black;
 	display: inline-block;
@@ -60,6 +60,7 @@ a {
 button {
 	border: none;
  	padding-right: -50px;
+	margin-top: 50px;
  	cursor: pointer;
  	text-decoration: none;
 }
@@ -84,7 +85,7 @@ button:focus {
 p {
 	margin-bottom: 10px;
 	font-weight: bold;
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	padding-right: 16px;
 	font-size: 15px;
 	color: #000;
@@ -258,14 +259,15 @@ p {
 	display: inline-block;
 	background: white;
 	padding: 10px;
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	margin-left: 325px;
 	margin-top: 5px;
+	margin-bottom: 10px;
 }
 
 .start {
 	position: relative;
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	font-size: 15px;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -274,7 +276,7 @@ p {
 
 .reset {
 	position: relative;
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	font-size: 15px;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -295,7 +297,7 @@ p {
 }
 
 .result {
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	color: black;
 	position: absolute;
 	text-align: center;
@@ -324,7 +326,7 @@ p {
 .follow {
 	position: absolute; /* position must be set absolute in order for div to follow cursor */
 	margin: 2px; /* due to some browser rendering issues, we need to give it some margin to prevent any irratic cursor flickers */
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	text-align: left;
 	font-size: 13px;
 	width: 200px;
@@ -337,7 +339,7 @@ p {
 .follow-fission {
 	position: absolute; /* position must be set absolute in order for div to follow cursor */
 	margin: 2px; /* due to some browser rendering issues, we need to give it some margin to prevent any irratic cursor flickers */
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	text-align: left;
 	font-size: 13px;
 	background: white;
@@ -357,7 +359,7 @@ p {
 .follow-mini {
 	position: absolute; /* position must be set absolute in order for div to follow cursor */
 	margin: 2px; /* due to some browser rendering issues, we need to give it some margin to prevent any irratic cursor flickers */
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	text-align: left;
 	font-size: 13px;
 	width: 180px;
@@ -378,7 +380,7 @@ p {
 
 .body { /* position must be set absolute in order for div to follow cursor */
 	color: black;
-	font-family: 'Anonymous Pro', monospace;
+	font-family: courier;
 	text-align: left;
 	font-size: 13px;
 	padding: 8px;
