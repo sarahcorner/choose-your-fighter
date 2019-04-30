@@ -19,6 +19,7 @@ html {
 .instruction {
  	left: 28%;
  	margin: auto;
+	padding-right: 5px;
  	margin-top: 8%;
  	margin-bottom: 30%;
  	text-decoration: none;
