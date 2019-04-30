@@ -10,6 +10,12 @@ html {
   }
 
 /* Instruction Text Style */
+
+.home {
+	margin-top: 20%;
+}
+
+
 .instruction {
  	left: 28%;
  	margin: auto;
@@ -18,7 +24,7 @@ html {
  	text-decoration: none;
  	position: absolute;
  	text-align: center;
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	font-size: 1.5em;
 	color: black;
 	display: inline-block;
@@ -78,7 +84,7 @@ button:focus {
 p {
 	margin-bottom: 10px;
 	font-weight: bold;
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	padding-right: 16px;
 	font-size: 15px;
 	color: #000;
@@ -240,7 +246,7 @@ p {
  	display: inline-block;
  	position: absolute;
  	font-size: 20px;
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	color: white;
 	padding: 5px;
 	background: black;
@@ -252,14 +258,14 @@ p {
 	display: inline-block;
 	background: white;
 	padding: 10px;
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	margin-left: 325px;
 	margin-top: 5px;
 }
 
 .start {
 	position: relative;
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	font-size: 15px;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -268,7 +274,7 @@ p {
 
 .reset {
 	position: relative;
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	font-size: 15px;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -289,7 +295,7 @@ p {
 }
 
 .result {
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	color: black;
 	position: absolute;
 	text-align: center;
@@ -318,7 +324,7 @@ p {
 .follow {
 	position: absolute; /* position must be set absolute in order for div to follow cursor */
 	margin: 2px; /* due to some browser rendering issues, we need to give it some margin to prevent any irratic cursor flickers */
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	text-align: left;
 	font-size: 13px;
 	width: 200px;
@@ -331,7 +337,7 @@ p {
 .follow-fission {
 	position: absolute; /* position must be set absolute in order for div to follow cursor */
 	margin: 2px; /* due to some browser rendering issues, we need to give it some margin to prevent any irratic cursor flickers */
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	text-align: left;
 	font-size: 13px;
 	background: white;
@@ -351,7 +357,7 @@ p {
 .follow-mini {
 	position: absolute; /* position must be set absolute in order for div to follow cursor */
 	margin: 2px; /* due to some browser rendering issues, we need to give it some margin to prevent any irratic cursor flickers */
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	text-align: left;
 	font-size: 13px;
 	width: 180px;
@@ -372,7 +378,7 @@ p {
 
 .body { /* position must be set absolute in order for div to follow cursor */
 	color: black;
-	font-family: "Anonymous Pro";
+	font-family: 'Anonymous Pro', monospace;
 	text-align: left;
 	font-size: 13px;
 	padding: 8px;
